@@ -1,18 +1,20 @@
-import React from "react";
-import Surveycontainer from "survey-container"
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-function FirstSection() {
-const [surveys, setSurveys] = useState([]);
+import Surveycontainer from "survey-container";
+
+function MetricsUi() {
+  const [surveys, setSurveys] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/surveys")
+    fetch("http://localhost:3000/api/metrics/metrics.php")
       .then((res) => res.json())
       .then((data) => setSurveys(data))
       .catch((err) => console.error("Error cargando encuestas:", err));
   }, []);
 
   return (
-    <div className="container p-4 mx-auto">
+    <div className="p-4 mx-auto ">
       <h1 className="mb-4 text-2xl font-bold">Encuestas Disponibles</h1>
 
       {surveys.map((survey) => (
@@ -30,14 +32,14 @@ const [surveys, setSurveys] = useState([]);
 
           <Link
             to={`/survey/${survey.id}`}
-            className="inline-block mt-2 text-blue-600 hover:underline"
+            className="inline-block p-2 mt-2 font-bold text-white bg-blue-600 hover:underline"
           >
-            Contestar esta encuesta
+            Contestar encuesta
           </Link>
         </div>
       ))}
     </div>
   );
-};
+}
 
-export default FirstSection;
+export default MetricsUi;

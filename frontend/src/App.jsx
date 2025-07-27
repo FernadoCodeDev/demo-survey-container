@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import DemoHome from "./page/Home"; 
+import Metrics from "./page/Metrics"; 
+import Survey from "./page/Survey"
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<DemoHome />} />
+      <Route path="/" element={<Metrics />} />
+      <Route path="/survey/:id" element={<Survey />} />
     </Routes>
   );
 };
