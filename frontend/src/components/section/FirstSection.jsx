@@ -1,11 +1,43 @@
 import React from "react";
+import Surveycontainer from "survey-container"
 
 function FirstSection() {
+const [surveys, setSurveys] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/surveys")
+      .then((res) => res.json())
+      .then((data) => setSurveys(data))
+      .catch((err) => console.error("Error cargando encuestas:", err));
+  }, []);
+
   return (
-    <div className="flex flex-col min-h-screen p-4 text-black bg-white dark:text-white dark:bg-neutral-900">
-      <h1 className="text-red-500">Funcionando Tailwind</h1>
+    <div className="container p-4 mx-auto">
+      <h1 className="mb-4 text-2xl font-bold">Encuestas Disponibles</h1>
+
+      {surveys.map((survey) => (
+        <div
+          key={survey.id}
+          className="p-4 mb-4 bg-white border rounded-md shadow-md"
+        >
+          <h2 className="text-lg font-semibold">{survey.qualification}</h2>
+
+          <ul className="my-2 list-disc list-inside">
+            {survey.questions.map((q) => (
+              <li key={q.id}>{q.text}</li>
+            ))}
+          </ul>
+
+          <Link
+            to={`/survey/${survey.id}`}
+            className="inline-block mt-2 text-blue-600 hover:underline"
+          >
+            Contestar esta encuesta
+          </Link>
+        </div>
+      ))}
     </div>
   );
-}
+};
 
 export default FirstSection;
