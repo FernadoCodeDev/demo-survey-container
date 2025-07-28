@@ -12,7 +12,7 @@ function SurveyUi() {
       <h1 className="mb-4 text-2xl font-bold">Contestar Encuesta</h1>
       <SurveyWidget
         surveyId={surveyId}
-        fetchUrl="http://localhost:3000/api/survey/survey.php?id="
+        fetchUrl="http://localhost:3000/api/surveys/survey.php?id="
       />
     </div>
   );
