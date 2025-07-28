@@ -31,7 +31,7 @@ function MetricsUi() {
           </ul>
 
           <Link
-            to={`/survey/${survey.id}`}
+            to={`/surveys/${survey.id}`}
             className="inline-block p-2 mt-2 font-bold text-white bg-blue-600 hover:underline"
           >
             Contestar encuesta
