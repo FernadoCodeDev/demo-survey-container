@@ -32,10 +32,3 @@ foreach ($data['responses'] as $response) {
         break;
     }
 }
-
-if ($success) {
-    echo json_encode(['message' => 'Todas las respuestas guardadas correctamente']);
-} else {
-    http_response_code(500);
-    echo json_encode(['error' => 'Error al guardar algunas respuestas']);
-}
