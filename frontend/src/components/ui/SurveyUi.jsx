@@ -13,6 +13,7 @@ function SurveyUi() {
       <SurveyWidget
         surveyId={surveyId}
         fetchUrl="http://localhost:3000/api/surveys/survey.php?id="
+        responseUrl="http://localhost:3000/api/response/postResponse.php"
       />
     </div>
   );
