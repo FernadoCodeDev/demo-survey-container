@@ -15,7 +15,7 @@ function MetricsUi() {
 
   return (
     <div className="p-4 mx-auto ">
-      <h1 className="mb-4 text-2xl font-bold">Encuestas Disponibles</h1>
+      <h1 className="mb-4 text-2xl font-bold text-center">Encuestas Disponibles</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 m-auto gap-4 max-w-[80rem] h-auto">
 
