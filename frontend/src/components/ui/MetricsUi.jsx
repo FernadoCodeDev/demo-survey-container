@@ -17,27 +17,32 @@ function MetricsUi() {
     <div className="p-4 mx-auto ">
       <h1 className="mb-4 text-2xl font-bold">Encuestas Disponibles</h1>
 
-      {surveys.map((survey) => (
-        <div
-          key={survey.id}
-          className="p-4 mb-4 bg-white border rounded-md shadow-md"
-        >
-          <h2 className="text-lg font-semibold">{survey.qualification}</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 m-auto gap-4 max-w-[80rem] h-auto">
 
-          <ul className="my-2 list-disc list-inside">
-            {survey.questions.map((q) => (
-              <li key={q.id}>{q.text}</li>
-            ))}
-          </ul>
-
-          <Link
-            to={`/surveys/${survey.id}`}
-            className="inline-block p-2 mt-2 font-bold text-white bg-blue-600 hover:underline"
+        {surveys.map((survey) => (
+          <div
+            key={survey.id}
+            className="p-4 mb-4 bg-white border rounded-md shadow-md "
           >
-            Contestar encuesta
-          </Link>
-        </div>
-      ))}
+            <h2 className="text-lg font-semibold">{survey.qualification}</h2>
+
+            <ul className="my-2 list-disc list-inside">
+              {survey.questions.map((q) => (
+                <li key={q.id}>{q.text}</li>
+              ))}
+            </ul>
+
+            <Link
+              to={`/surveys/${survey.id}`}
+              className="inline-block p-2 mt-2 font-bold text-white bg-blue-600 hover:underline"
+            >
+              Contestar encuesta
+            </Link>
+          </div>
+        ))}
+
+      </div>
+
     </div>
   );
 }
