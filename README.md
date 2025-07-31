@@ -149,17 +149,82 @@ import { SurveyWidget } from "survey-container";
 ```
 
 - Obtener el ID de la encuesta usando useParams():
-- 
 ```
 const { surveyId } = useParams();
 ```
 - Renderizar el componente `<SurveyWidget />` y pasarle los props necesarios como `surveyId`, `fetchUrl`, `responseUrl`.
 
-### Cnfiguración de los Props
+### 🧩 Props del componente SurveyWidget
+
+El componente `<SurveyWidget />` acepta varios props para adaptar su comportamiento a distintos entornos y necesidades. A continuación te explicamos cada uno con base en cómo se utiliza en esta demo:
+
+---
+
+### ✅ Props utilizados en esta demo
+
+```
+<SurveyWidget
+  surveyId={surveyId}
+  fetchUrl="http://localhost:3000/api/surveys/survey.php?id="
+  responseUrl="http://localhost:3000/api/response/postResponse.php"
+  onAlert={(msg, type = "info") => {
+    });
+  }}
+/>
+```
+
+### 🧾 Explicación de cada prop
+
+| Prop               | Tipo                               | Obligatorio | Descripción                                                                                                                                                                                                                                                                           |
+| ------------------ | ---------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `surveyId`         | `string`                           | ✅ Sí        | Es el ID de la encuesta que quieres mostrar. En esta demo se obtiene desde la URL usando `useParams()`.                                                                                                                                                                               |
+| `fetchUrl`         | `string`                           | ✅ Sí\*      | Es la URL base para hacer la solicitud **GET** y obtener los datos de la encuesta. Por ejemplo: `http://localhost:3000/api/surveys/survey.php?id=`. Se añadirá automáticamente el `surveyId` al final.                               |
+| `responseUrl`      | `string`                           | ✅ Sí\*      | Es la URL donde se envían las respuestas con una solicitud **POST**.                                                                                                                                          |
+| `onAlert`          | `(message: string, type?: string)` | ❌ No        | Función que se ejecuta para mostrar una alerta dependiendo del estado de la encuesta (error, éxito, advertencia). Puedes personalizarla como quieras (modal, toast, etc.). En esta demo se usa la librería [`react-toastify`](https://fkhadra.github.io/react-toastify/introduction). |
+| `apiUrl`           | `string`                           | ❌ No        | Si prefieres una URL base en lugar de `fetchUrl` o `responseUrl` individuales, puedes usar este prop como raíz para los endpoints `/surveys` y `/responses`. No se usa en esta demo.                                                                                                  |
+| `onSubmit`         | `(responses) => Promise<void>`     | ❌ No        | Si quieres manejar tú mismo el envío de respuestas, puedes pasar tu propia función `onSubmit`. Si no se define, se hará un POST automáticamente a `responseUrl`.                                                                                                                      |
+| `loadingText`      | `string`                           | ❌ No        | Texto que se muestra mientras la encuesta está cargando. Por defecto: `"Cargando encuesta..."`.                                                                                                                                                                                       |
+| `submitButtonText` | `string`                           | ❌ No        | Texto del botón de envío. Por defecto: `"Enviar respuestas"`.                                                                                                                                                                                                                         |
+| `className`        | `string`                           | ❌ No        | Clase CSS personalizada para aplicar estilos adicionales al contenedor del widget.                                                                                                                                                                                                    |
+
+### 🔔 ¿Por qué usar onAlert?
+
+`onAlert` es muy útil si quieres notificar al usuario cuando:
+
+- No ha respondido todas las preguntas (`warning`)
+- Las respuestas se enviaron correctamente (`success`)
+- Ocurrió un error al enviar (`error`)
+
+En la demo se usó así, con `react-toastify`:
+
+```
+ onAlert={(msg, type = "info") => {
+          toast(msg, {
+            type,
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
+        }}
+      />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+      />
+```
+Pero puedes usar cualquier otra solución como `modals`, `alerts`, `banners`, etc.
+
+✅ Si todo está correctamente configurado, deberías ver en pantalla el contenido completo de la encuesta.  
+En la demo, por ejemplo, se muestra una encuesta con preguntas sobre **Git** como referencia visual.
+
+🔗 En los ejemplos proporcionados dentro del código y el `README`, verás URLs con `localhost`. Estas se usan únicamente para mostrar de forma clara cómo debe estructurarse cada endpoint.  
+En tu propio proyecto puedes (y se recomienda) utilizar **variables de entorno** para manejar estas rutas y no exponerlas directamente en el código.
 
 ![Demo-Image-2](https://github.com/FernadoCodeDev/demo-survey-container/blob/main/readme/Readme-Image-2.png)
-
-
 </details>
 
 <details>
