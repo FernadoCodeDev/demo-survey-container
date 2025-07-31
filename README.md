@@ -5,7 +5,7 @@
 
 Si estás buscando el repositorio del desarrollo del paquete, puedes encontrarlo aquí:
 
-🔗 [🔗 Repositorio de desarrollo de survey-container](https://github.com/FernadoCodeDev/Survey-Container)
+🔗 [Repositorio de desarrollo de survey-container](https://github.com/FernadoCodeDev/Survey-Container)
 
 ### ⚙️ Tecnologías utilizadas
 
