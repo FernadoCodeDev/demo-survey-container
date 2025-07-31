@@ -4,12 +4,8 @@ import { SurveyWidget } from "survey-container";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 function SurveyUi() {
   const { surveyId } = useParams();
-
-  const apiUrl = `http://localhost:3000/api/surveys`;
-
 
   return (
     <div className="p-4">
