@@ -109,8 +109,6 @@ import "react-toastify/dist/ReactToastify.css";
 function SurveyUi() {
   const { surveyId } = useParams();
 
-  const apiUrl = `http://localhost:3000/api/surveys`;
-
   return (
     <div className="p-4">
       <h1 className="mb-4 text-2xl font-bold text-center">Contestar Encuesta</h1>
@@ -140,7 +138,6 @@ function SurveyUi() {
 }
 
 export default SurveyUi;
-
 ```
 
 Como puedes ver, solo necesitas:
