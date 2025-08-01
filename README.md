@@ -336,7 +336,10 @@ Estas tablas representan:
 
 <div align="left">
 
-[![NPM](https://img.shields.io/static/v1?message=descargar-Paquete-NPM-survey-container&logo=NPM&label=&color=CD3E3D&logoColor=white&labelColor=&style=for-the-badge)](https://www.npmjs.com/package/survey-container)[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernadoCodeDev/survey-container)[![WORDPRESS](https://img.shields.io/static/v1?message=página-de-documentación-de-paquete-NPM-survey-container-creada-con-WordPress&logo=WordPress&label=&color=1790c8&logoColor=white&labelColor=&style=for-the-badge)]()
+[![NPM](https://img.shields.io/static/v1?message=descargar-Paquete-NPM-survey-container&logo=NPM&label=&color=CD3E3D&logoColor=white&labelColor=&style=for-the-badge)](https://www.npmjs.com/package/survey-container)
+[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernadoCodeDev/survey-container)
+[![WORDPRESS](https://img.shields.io/static/v1?message=página-de-documentación-de-paquete-NPM-survey-container-creada-con-WordPress&logo=WordPress&label=&color=1790c8&logoColor=white&labelColor=&style=for-the-badge)]()
+
 </div>
 
 
