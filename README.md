@@ -176,7 +176,8 @@ El componente `<SurveyWidget />` acepta varios props para adaptar su comportamie
 | ------------------ | ---------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `surveyId`         | `string`                           | ✅ Sí        | Es el ID de la encuesta que quieres mostrar. En esta demo se obtiene desde la URL usando `useParams()`.                                                                                                                                                                               |
 | `fetchUrl`         | `string`                           | ✅ Sí\*      | Es la URL base para hacer la solicitud **GET** y obtener los datos de la encuesta. Por ejemplo: `http://localhost:3000/api/surveys/survey.php?id=`. Se añadirá automáticamente el `surveyId` al final.                               |
-| `responseUrl`      | `string`                           | ✅ Sí\*      | Es la URL donde se envían las respuestas con una solicitud **POST**.                                                                                                                                          |
+| `responseUrl`      | `string`                           | ✅ Sí\*      | Es la URL donde se envían las respuestas con una solici
++tud **POST**.                                                                                                                                          |
 | `onAlert`          | `(message: string, type?: string)` | ❌ No        | Función que se ejecuta para mostrar una alerta dependiendo del estado de la encuesta (error, éxito, advertencia). Puedes personalizarla como quieras (modal, toast, etc.). En esta demo se usa la librería [`react-toastify`](https://fkhadra.github.io/react-toastify/introduction). |
 | `apiUrl`           | `string`                           | ❌ No        | Si prefieres una URL base en lugar de `fetchUrl` o `responseUrl` individuales, puedes usar este prop como raíz para los endpoints `/surveys` y `/responses`. No se usa en esta demo.                                                                                                  |
 | `onSubmit`         | `(responses) => Promise<void>`     | ❌ No        | Si quieres manejar tú mismo el envío de respuestas, puedes pasar tu propia función `onSubmit`. Si no se define, se hará un POST automáticamente a `responseUrl`.                                                                                                                      |
@@ -336,8 +337,8 @@ Estas tablas representan:
 
 <div align="left">
 
-[![NPM](https://img.shields.io/static/v1?message=descargar-Paquete-NPM-survey-container&logo=NPM&label=&color=CD3E3D&logoColor=white&labelColor=&style=for-the-badge)](https://www.npmjs.com/package/survey-container)
+[![NPM](https://img.shields.io/static/v1?message=Paquete-NPM&logo=NPM&label=&color=CD3E3D&logoColor=white&labelColor=&style=for-the-badge)](https://www.npmjs.com/package/survey-container)
 [![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernadoCodeDev/survey-container)
-[![WORDPRESS](https://img.shields.io/static/v1?message=página-de-documentación-de-paquete-NPM-survey-container-creada-con-WordPress&logo=WordPress&label=&color=1790c8&logoColor=white&labelColor=&style=for-the-badge)]()
+[![WORDPRESS](https://img.shields.io/static/v1?message=página-de-documentación&logo=WordPress&label=&color=1790c8&logoColor=white&labelColor=&style=for-the-badge)]()
 
 </div>
