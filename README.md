@@ -295,7 +295,6 @@ Si estás usando otro stack (por ejemplo, Express.js, Django, Laravel, etc.), pu
 ### 💡 Nota importante
 Aunque puedes copiar directamente los archivos PHP para facilitar la integración, es necesario contar con ciertas tablas específicas en tu base de datos para que todo funcione correctamente. Estas se detallan más adelante en el README.
 
-
 </details>
 
 <details>
