@@ -4,8 +4,8 @@
 
 Si estás buscando el repositorio del desarrollo del paquete, puedes encontrarlo aquí:
 
-[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernadoCodeDev/survey-container)
-[![GITHUB](https://img.shields.io/static/v1?message=Documentación&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernadoCodeDev/Survey-Container-Documentation)
+[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/survey-container)
+[![GITHUB](https://img.shields.io/static/v1?message=Documentación&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/Survey-Container-Documentation)
 
 # 🚀 Demo - Survey Container
 Este repositorio es una **aplicación de demostración** que utiliza el paquete NPM `survey-container` como dependencia. Aquí encontrarás ejemplos claros y documentación sobre:
@@ -29,8 +29,6 @@ Esta demo fue construida utilizando el siguiente stack:
 ![npm](https://img.shields.io/static/v1?message=dependencia-survey-container&logo=npm&label=&color=CB3837&logoColor=white&labelColor=&style=for-the-badge)
 
 </div>
-
-
 
 Este repositorio tiene como objetivo ayudarte a entender cómo implementar y usar el paquete `survey-container` en tu propio entorno. Toda la configuración necesaria está explicada paso a paso para que puedas adaptar esta solución a tus necesidades.
 
