@@ -89,7 +89,7 @@ La función principal aquí es obtener las métricas desde tu backend. Asegúrat
 
 cambiala por la URL de tú proyecto con esto te permitirá consultar y visualizar las métricas de tus encuestas o de lo contrario te mostrara el error en la consola.
 
-![Demo-Image-1](https://github.com/FernadoCodeDev/demo-survey-container/blob/main/readme/Readme-Image-1.png)
+![Demo-Image-1](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/readme/Readme-Image-1.png)
 
 ### 📝 Página para Contestar Encuestas
 
@@ -228,7 +228,7 @@ En la demo, por ejemplo, se muestra una encuesta con preguntas sobre **Git** com
 🔗 En los ejemplos proporcionados dentro del código y el `README`, verás URLs con `localhost`. Estas se usan únicamente para mostrar de forma clara cómo debe estructurarse cada endpoint.  
 En tu propio proyecto puedes (y se recomienda) utilizar **variables de entorno** para manejar estas rutas y no exponerlas directamente en el código.
 
-![Demo-Image-2](https://github.com/FernadoCodeDev/demo-survey-container/blob/main/readme/Readme-Image-2.png)
+![Demo-Image-2](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/readme/Readme-Image-2.png)
 </details>
 
 <details>
