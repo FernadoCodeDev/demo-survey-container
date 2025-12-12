@@ -4,8 +4,8 @@
 
 Si estás buscando el repositorio del desarrollo del paquete, puedes encontrarlo aquí:
 
-[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernadoCodeDev/survey-container)
-[![GITHUB](https://img.shields.io/static/v1?message=Documentación&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernadoCodeDev/Survey-Container-Documentation)
+[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/survey-container)
+[![GITHUB](https://img.shields.io/static/v1?message=Documentación&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/Survey-Container-Documentation)
 
 # 🚀 Demo - Survey Container
 Este repositorio es una **aplicación de demostración** que utiliza el paquete NPM `survey-container` como dependencia. Aquí encontrarás ejemplos claros y documentación sobre:
@@ -29,8 +29,6 @@ Esta demo fue construida utilizando el siguiente stack:
 ![npm](https://img.shields.io/static/v1?message=dependencia-survey-container&logo=npm&label=&color=CB3837&logoColor=white&labelColor=&style=for-the-badge)
 
 </div>
-
-
 
 Este repositorio tiene como objetivo ayudarte a entender cómo implementar y usar el paquete `survey-container` en tu propio entorno. Toda la configuración necesaria está explicada paso a paso para que puedas adaptar esta solución a tus necesidades.
 
@@ -91,7 +89,7 @@ La función principal aquí es obtener las métricas desde tu backend. Asegúrat
 
 cambiala por la URL de tú proyecto con esto te permitirá consultar y visualizar las métricas de tus encuestas o de lo contrario te mostrara el error en la consola.
 
-![Demo-Image-1](https://github.com/FernadoCodeDev/demo-survey-container/blob/main/readme/Readme-Image-1.png)
+![Demo-Image-1](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/readme/Readme-Image-1.png)
 
 ### 📝 Página para Contestar Encuestas
 
@@ -230,7 +228,7 @@ En la demo, por ejemplo, se muestra una encuesta con preguntas sobre **Git** com
 🔗 En los ejemplos proporcionados dentro del código y el `README`, verás URLs con `localhost`. Estas se usan únicamente para mostrar de forma clara cómo debe estructurarse cada endpoint.  
 En tu propio proyecto puedes (y se recomienda) utilizar **variables de entorno** para manejar estas rutas y no exponerlas directamente en el código.
 
-![Demo-Image-2](https://github.com/FernadoCodeDev/demo-survey-container/blob/main/readme/Readme-Image-2.png)
+![Demo-Image-2](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/readme/Readme-Image-2.png)
 </details>
 
 <details>
@@ -344,6 +342,6 @@ Estas tablas representan:
 <div align="left">
 
 [![NPM](https://img.shields.io/static/v1?message=Paquete-NPM&logo=NPM&label=&color=CD3E3D&logoColor=white&labelColor=&style=for-the-badge)](https://www.npmjs.com/package/survey-container)
-[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernadoCodeDev/survey-container)
+[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/survey-container)
 [![WORDPRESS](https://img.shields.io/static/v1?message=página-de-documentación&logo=WordPress&label=&color=1790c8&logoColor=white&labelColor=&style=for-the-badge)](https://surveycontainer.wordpress.com/)
 </div>
